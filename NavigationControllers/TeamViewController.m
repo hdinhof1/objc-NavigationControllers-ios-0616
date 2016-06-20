@@ -14,7 +14,6 @@
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
    
     TeamDetailViewController *destination = (TeamDetailViewController *)segue.destinationViewController;
-    //might not want to instantiate
     
     if ( [segue.identifier isEqualToString:@"al"] ) {
         TeamMember *al = [[TeamMember alloc] initWithName:@"Al" phoneNumber:@"5551212" birthCity:@"Detroit" birthState:@"Michigan" favoriteBand:@"The Beatles" photo:[UIImage imageNamed:@"al"]];
